@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <div class="header">
+            <form id="color-form">
+                <input type="color" id="color-input">
+                <select name="schemes" id="schemes">
+                    <option value="monochrome" class="select-item">Monochrome</option>
+                    <option value="monochrome-dark" class="select-item">Monochrome-dark</option>
+                    <option value="monochrome-light" class="select-item">Monochrome-light</option>
+                    <option value="analogic" class="select-item">Analogic</option>
+                    <option value="complement" class="select-item">Complement</option>
+                    <option value="analogic-complement" class="select-item">Analogic-complement</option>
+                    <option value="triad" class="select-item">Triad</option>
+                </select>
+                <button>Get color scheme</button>
+            </form>
+            <div class="tooltip">copy to clipboard!</div>
+        </div>
+        <div id="colors-container">
+
+
+        </div>
+
+        <div id="colors-hex">
+
+        </div>
+    </main>
+
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
