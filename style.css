@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    height: 100vh;
     background-color: #E5E5E5;
 }
 
@@ -104,6 +103,14 @@ button {
     margin-top: 1em;
     font-weight: bold;
     background-color: yellow;
+}
+
+.hex {
+    font-weight: bold;
+}
+
+.hex:hover {
+    border-bottom: 3px solid yellow;
 }
 
 .hidden {

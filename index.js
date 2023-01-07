@@ -96,19 +96,18 @@ function handleCopyToClipboard(e) {
       },
       function (err) {}
     );
-  } else if (
-    e.target.style.backgroundColor !== undefined ||
-    e.target.style.backgroundColor !== " "
-  ) {
-    navigator.clipboard.writeText(e.target.style.backgroundColor).then(
-      function () {
-        console.log(typeof e.target.style.backgroundColor);
-        document.querySelector(".tooltip").textContent = "copied!";
-      },
-      function (err) {}
-    );
+  } else if (e.target.classList.contains("color")) {
+    navigator.clipboard
+      .writeText(
+        window.getComputedStyle(e.target).getPropertyValue("background-color")
+      )
+      .then(
+        function () {
+          document.querySelector(".tooltip").textContent = "copied!";
+        },
+        function (err) {}
+      );
   }
-  console.log(e.target.style.backgroundColor);
 }
 
 firstRender();
